@@ -1,0 +1,13 @@
+#ifndef @PROJECT_NAME@_GLOBAL_H
+#define @PROJECT_NAME@_GLOBAL_H
+
+
+namespace muon::config {
+namespace version {
+constexpr int major { @PROJECT_VERSION_MAJOR@ };
+constexpr int minor { @PROJECT_VERSION_MINOR@ };
+constexpr int patch { @PROJECT_VERSION_PATCH@ };
+} // namespace version
+} // namespace muon::config
+
+#endif // @PROJECT_NAME@_GLOBAL_H
