@@ -12,13 +12,15 @@ namespace muon {
 
 class action_initialization : public G4VUserActionInitialization {
 public:
-    explicit action_initialization(recorder& rec);
+    explicit action_initialization(recorder& rec, double energy);
 
     void BuildForMaster() const override;
     void Build() const override;
 
 private:
     recorder& m_recorder;
+
+    double m_energy { 0.0 };
 };
 }
 

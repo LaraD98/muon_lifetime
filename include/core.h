@@ -25,7 +25,9 @@ private:
 
     G4RunManager* m_run_manager { nullptr };
 
-    recorder m_recorder {"data"};
+    double m_energy { 0.0 };
+    int m_n { 1 };
+    recorder m_recorder {"data.v"};
 };
 }
 #endif // CORE_H

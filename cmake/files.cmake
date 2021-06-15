@@ -5,6 +5,7 @@ set(SIM_SOURCE_FILES
     "${PROJECT_SOURCE_DIR}/actions/actioninitialization.cpp"
     "${PROJECT_SOURCE_DIR}/actions/primarygeneratoraction.cpp"
     "${PROJECT_SOURCE_DIR}/actions/trackingaction.cpp"
+    "${PROJECT_SOURCE_DIR}/actions/steppingaction.cpp"
 
     "${PROJECT_SOURCE_DIR}/analysis/recorder.cpp"
 
@@ -18,6 +19,7 @@ set(SIM_HEADER_FILES
     "${PROJECT_INCLUDE_DIR}/actions/actioninitialization.h"
     "${PROJECT_INCLUDE_DIR}/actions/primarygeneratoraction.h"
     "${PROJECT_INCLUDE_DIR}/actions/trackingaction.h"
+    "${PROJECT_INCLUDE_DIR}/actions/steppingaction.h"
 
     "${PROJECT_INCLUDE_DIR}/analysis/recorder.h"
     "${PROJECT_INCLUDE_DIR}/analysis/histogram.h"

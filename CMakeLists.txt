@@ -13,6 +13,8 @@ include(cmake/version.cmake)
 configure_file("${PROJECT_CONFIG_DIR}/global.h.in"
                "${PROJECT_INCLUDE_DIR}/global.h")
 
+configure_file("${PROJECT_CONFIG_DIR}/run"
+               "${PROJECT_BINARY_DIR}/run")
 find_package(Geant4 REQUIRED)
 
 

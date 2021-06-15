@@ -18,7 +18,7 @@ class recorder;
 
 class primary_generator_action : public G4VUserPrimaryGeneratorAction {
 public:
-    primary_generator_action();
+    primary_generator_action(double energy);
 
     ~primary_generator_action() override;
 

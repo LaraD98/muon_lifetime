@@ -15,6 +15,7 @@ public:
     void reset(double energy);
 
     void save(double range);
+    void save(double range, double d_e);
 
     void store();
 
@@ -24,7 +25,14 @@ private:
     std::string m_directory {};
     double m_energy {};
 
-    histogram<s_n_bins> m_histogram {};
+    std::vector<double> m_data {};
+    struct dat
+    {
+        double range {};
+        double d_e {};
+    };
+
+    std::vector<dat> m_deposit_data {};
 };
 }
 

@@ -32,12 +32,12 @@ auto detector_construction::Construct() -> G4VPhysicalVolume*
         false,
         0,
         true);
-
+/*
     G4NistManager* nist = G4NistManager::Instance();
     G4Material* air = nist->FindOrBuildMaterial("G4_AIR");
-
+*/
     G4VSolid* solid_layer { new G4Box{"atmosphere", 100.0 * m, 100.0 * m, 10'000.0 * km} };
-    auto* logical_volume { new G4LogicalVolume(solid_layer, air, "atmosphere") };
+    auto* logical_volume { new G4LogicalVolume(solid_layer, vacuum, "atmosphere") };
     [[maybe_unused]] auto* physical_layer { new G4PVPlacement{
         nullptr,
         G4ThreeVector{},

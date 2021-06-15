@@ -10,10 +10,10 @@
 
 namespace muon {
 
-primary_generator_action::primary_generator_action()
+primary_generator_action::primary_generator_action(double energy)
 {
     m_gun.SetParticleDefinition(G4MuonMinus::Definition());
-    m_gun.SetParticleEnergy(10 * MeV);
+    m_gun.SetParticleEnergy(energy);
     m_gun.SetParticlePosition(G4ThreeVector{0.0, 0.0, 10'000.0 * km});
     m_gun.SetParticleMomentumDirection(G4ThreeVector{0., 0., -1.0});
 }
